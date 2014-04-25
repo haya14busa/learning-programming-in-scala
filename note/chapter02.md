@@ -132,11 +132,13 @@ args.foreach(arg => println(arg))
 
 引数が1文から構成される場合は、引数を明示的に指定しなくて済む -> **partially applied function** 部分適用された関数 c.f. 8.6
 
-### 関数リテラル
+### 関数リテラル function literal
 ```
 ({parameters})   => {body}
 (x: Int, y: Int) => x + y
 ```
+
+c.f. 無名関数
 
 ### for式 c.f. 7.3 && 23
 

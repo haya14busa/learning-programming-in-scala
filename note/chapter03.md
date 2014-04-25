@@ -5,6 +5,8 @@ Chapter 03 Next Steps in Scala
 ----------
 Scalaでは`new`をつかってオブジェクトを生成し、その時に値と型をパラメータ化できる
 
+XXX: 値と型でパラメータ化するとは???
+
 ### パラメータ化
 生成するインスタンスに「構成を設定する」こと
 
@@ -51,6 +53,15 @@ val threeFour = List(3, 4)
 val oneTwoThreeFour = oneTwo ::: threeFour
 println(oneTwo + " and " + threeFour + " were not mutated.")
 println("Thus, " + oneTwoThreeFour + " is a new list.")
+```
+
+### List is immutable
+
+```
+scala> oneTwoThree(0) = 4
+<console>:9: error: value update is not a member of List[Int]
+              oneTwoThree(0) = 4
+              ^
 ```
 
 ### Note
