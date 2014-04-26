@@ -1,10 +1,15 @@
 class Rational(n: Int, d: Int) {
   // println("Created " + n + "/" + d)
+
+  // Precondition for Rational
   require(d != 0)
+  // Greatest Common Divisor
   private val g = gcd(n.abs, d.abs)
   val numer: Int = n / g
   val denom: Int = d / g
-  def this(n: Int) = this(n, 1) // auxiliary constructors
+  // auxiliary constructors
+  // Allow `new Rational(5)` -> 5/1
+  def this(n: Int) = this(n, 1)
   override def toString = numer + "/" + denom
 
   def +(that: Rational): Rational = {
