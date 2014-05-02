@@ -9,7 +9,7 @@ object Element {
 
   private class ArrayElement(
     val contents: Array[String]
-  ) extends Element 
+  ) extends Element
 
   private class LineElement(s: String) extends Element {
     val contents = Array(s)
@@ -67,7 +67,7 @@ abstract class Element {
       top above this above bot
     }
   }
-  override def toString = contents.mkString("\n") 
+  override def toString = contents.mkString("\n")
 
 }
 
@@ -91,19 +91,19 @@ abstract class Element {
     val this1 = this heighten that.height
     val that1 = that heighten this.height
     elem(
-      for ((line1, line2) <- this1.contents zip that1.contents) 
+      for ((line1, line2) <- this1.contents zip that1.contents)
       yield line1 + line2)
   }
 
-  def widen(w: Int): Element = 
+  def widen(w: Int): Element =
     if (w <= width) this
     else {
-      val left = elem(' ', (w - width) / 2, height) 
+      val left = elem(' ', (w - width) / 2, height)
       var right = elem(' ', w - width - left.width, height)
       left beside this beside right
     }
 
-  def heighten(h: Int): Element = 
+  def heighten(h: Int): Element =
     if (h <= height) this
     else {
       val top = elem(' ', width, (h - height) / 2)

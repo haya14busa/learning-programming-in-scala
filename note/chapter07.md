@@ -121,6 +121,8 @@ res1: Int = 1
 
 基本的にfinallyで値は返さない!
 
+副作用を発生させる手段として使う e.g. ファイルのclose
+
 7.5 Match expressions
 ---------------------
 - similar to `switch`
