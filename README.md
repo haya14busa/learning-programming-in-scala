@@ -7,3 +7,8 @@ Programming in Scala
 
 ### コップ本読書会
 - [コップ本のコメント・疑問 - 名古屋Scala勉強会](https://sites.google.com/site/nagoyascalas/home/koppu-hon-no-komento---gimon-1)
+
+
+Scala
+-----
+- [15分で始めるScala | Scala Cookbook](http://xerial.org/scala-cookbook/recipes/2012/11/29/scala-in-15-minutes/)
