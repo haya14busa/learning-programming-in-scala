@@ -7,7 +7,7 @@ Programming in Scala
 
 ### コップ本読書会
 - [コップ本のコメント・疑問 - 名古屋Scala勉強会](https://sites.google.com/site/nagoyascalas/home/koppu-hon-no-komento---gimon-1)
-
+- [LL脳がscalaの勉強を始めたよ まとめ - Reinvention of the Wheel](http://d.hatena.ne.jp/plasticscafe/20100601/1277265505)
 
 Scala
 -----
