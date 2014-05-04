@@ -26,7 +26,7 @@ for(i <- 0 to 2) {
 - `0 to 2` は `0.to(2)`というメソッド呼び出しの省略形
 - `0 to 2`は配列ではなくシーケンスの一種を返している。 c.f. 17
 
-### 括弧で囲んだ値を適用したコードははapplyメソッドを呼び出してる
+### 括弧で囲んだ値を適用したコードはapplyメソッドを呼び出してる
 - 配列もそう
 - `greetString(i)` は `greetString.apply(i)`に変換される
 - `greetString(0) = "Hello"` は `greetString.update(0, "Hello")` に変換される
